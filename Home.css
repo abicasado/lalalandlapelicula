@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    margin: 0px;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+    margin: 0px; 
+    scroll-behavior: smooth;
+    background-image: url("img/inicio.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 640px;
+}
+
+#Contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4rem 25% 1fr 1fr 8rem;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "hero hero . ."
+      "banner banner banner banner";
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    font-size: 120% ;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+} 
+
+span:hover { background-color: rgba(68, 0, 255, 0.733);}
+
+#main {
+    grid-area: main;
+    scroll-behavior: smooth;
+    background-image: url("img/inicio.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 640px;
+}
+
+#hero {
+    grid-area: hero;
+    margin: 0px;
+    scroll-behavior: smooth;
+    background-image: url("img/inicio.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 640px;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white;
+    font-size: 13px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-left: 3%;
+}
+
+#container {  margin-left: 25%;}
+
+#banner {
+    background-color: rgba(132, 0, 255, 0.377);
+    grid-area: banner;
+    max-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;   
+}
+
+#logo { 
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 800px; 
+    background-image: url("img/logoblanco.png");
+    background-position: center;
+}
+
+.boton { color: white;  background-color: transparent ; 
+    font-family: 'Urbanist', sans-serif;    
+    font-size: 25px;
+    border-radius: 13px;
+    border-style: solid;
+    border-color: white;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-position: center;
+    margin-top: 400%;
+    margin-bottom: 0%;
+    
+}
+
+.boton:hover  { color: white;  background-color: yellow ; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border-radius: 13px;
+    border-color: yellow;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;    
+
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+  }
+
+span a {text-decoration: none; color:white;} 
+
+@media screen and (max-width: 760px) {
+    #contenedor-ppal {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "hero"
+        "hero"
+        "banner";
+}}
+  
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+    #contenedor-ppal{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
+      grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "hero hero . ."
+      "banner banner banner banner"
+      ;
+}}

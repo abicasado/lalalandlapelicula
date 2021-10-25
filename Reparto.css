@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px; 
+    scroll-behavior: smooth;
+    background-image: url("img/inicio.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 640px;
+}
+
+span:hover { background-color: rgba(68, 0, 255, 0.733);}
+
+#Contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 3fr 3fr 0.3fr 2.5fr 0.5fr;
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "main1 main1  img1 img1 "
+      "img2 img2  main2 main2 "
+      "elenco elenco elenco elenco"
+      "hero hero hero hero"
+      "banner banner banner banner"; 
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    font-size: 120% ;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 15px;
+} 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    padding: 0%;
+    font-family: 'Urbanist', sans-serif;
+    background-image: url("img/protagonistas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main1 {
+    grid-area: main1;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white; 
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url("img/Mia.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    background-size: contain;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+#img2 {
+    grid-area: img2;
+    min-width: 100px;
+    background-image: url("img/Sebastian.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    background-size: contain;
+    margin-left: 20%;
+}
+
+#main2 {
+    grid-area: main2;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-left: 20%;
+}
+
+#elenco {
+    grid-area: elenco;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    padding: 0%;
+    font-family: 'Urbanist', sans-serif;
+    background-image: url("img/otros.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#hero {
+    grid-area: hero;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white;
+    text-decoration: none;
+    
+}
+
+#banner {
+    background-color: rgba(132, 0, 255, 0.377);
+    grid-area: banner;
+    max-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;   
+}
+
+#logo { 
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 800px; 
+    background-image: url("img/logoblanco.png");
+    background-position: center;
+}
+
+#container {  margin-left: 25%;}
+span a {text-decoration: none; color:white;}
+
+@media screen and (max-width: 760px) {
+    #contenedor-ppal {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "header"
+        "main1"
+        "img1"
+        "main2"
+        "img2"
+        "hero"
+        "banner";
+}}
+  
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+    #contenedor-ppal{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
+      grid-template-areas: 
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "main1 main1  img1 img1 "
+      "img2 img2  main2 main2 "
+      "elenco elenco elenco elenco"
+      "hero hero hero hero"
+      "banner banner banner banner"
+}}

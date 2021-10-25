@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    margin: 0px;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+
+span:hover { background-color: rgba(68, 0, 255, 0.733); color: white;}
+
+body {
+    margin: 0px; 
+    scroll-behavior: smooth;
+    background-image: url("img/fondofinal.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 600px;
+}
+
+#Contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 1.5fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "banner banner banner banner";
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    font-size: 120% ;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+} 
+
+#main {
+    grid-area: main;
+    scroll-behavior: smooth;
+    background-image: url("img/fondofinal.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 620px;
+}
+
+.texto { font-family: 'Roboto Condensed', sans-serif ; margin-left: 45%; margin-right: 15%; margin-top: 0%; margin-bottom: 1%; color: white;}
+
+.formulario {color: white; margin-left: 45% ; margin-right: 15%;
+        font-family: 'Roboto Condensed', sans-serif;     
+}
+
+.boton {color: white; margin-left: 45% ; margin-right: 15%;
+    font-family: 'Roboto Condensed', sans-serif; 
+    background-color: rgba(68, 0, 255, 0.377);
+    font-size: medium;   
+    text-align: center;
+}
+
+#seleccion {color: black; margin-right: 40%;}
+
+#banner {
+    background-color: rgba(68, 0, 255, 0.377);
+    grid-area: banner;
+    max-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;   
+}
+
+#logo { 
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 800px; 
+    background-image: url("img/logoblanco.png");
+    background-position: center;
+}
+
+
+span a {text-decoration: none; color:white;}
+
+@media screen and (max-width: 760px) {
+    #contenedor-ppal {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "banner";
+}}
+  
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+    #contenedor-ppal{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
+      grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "banner banner banner banner"
+      ;
+}}

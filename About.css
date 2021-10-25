@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px; 
+    scroll-behavior: smooth;
+    background-image: url("img/inicio.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: relative;
+    min-height: 640px;
+}
+
+span:hover { background-color: rgba(68, 0, 255, 0.733); }
+
+#Contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 2fr 2fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+      "header header header header header"
+      "titulo titulo titulo titulo titulo"
+      "main1 main1  main1 img1 img1 "
+      "main2 main2  main2 mapa1 mapa1 "
+      "main3 main3 main3 video1 video1"
+      "main4 main4 main4 img2 img2"
+      "banner banner banner banner banner"; 
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    font-size: 120% ;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: transparent;
+} 
+
+#titulo {
+    grid-area: titulo;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 15px;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+}
+
+#main1 {
+    grid-area: main1;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white; 
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-left: 7%;
+    padding: 30px;
+    background-color: rgba(132, 0, 255, 0.493);
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url("img/baile.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    background-size: contain;
+    margin-right: 10%;
+    margin-top: 5px;
+    min-width: 560px;
+    min-height: 315px;
+}
+
+#main2 {
+    grid-area: main2;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white; 
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-left: 7%;
+    padding: 30px;
+    background-color: rgba(132, 0, 255, 0.493);
+}
+
+#mapa1 {
+    position: relative;
+    margin-right: 10%;
+    grid-area: mapa1;
+    margin-top: 5px;
+    object-position: center;
+}
+
+#main3 {
+    grid-area: main3;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white; 
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-left: 7%;
+    padding: 30px;
+    background-color: rgba(132, 0, 255, 0.493);
+}
+
+#video1 {
+    position: relative;
+    margin-right: 10%;
+    grid-area: video1;
+    margin-top: 5px;
+    object-position: center;
+}
+
+#main4 {
+    grid-area: main4;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;   
+    color: white; 
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-left: 7%;
+    padding: 30px;
+    background-color: rgba(132, 0, 255, 0.493);
+}
+
+#img2 {
+    grid-area: img2;
+    background-image: url("img/premios.png");
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    background-size: contain;
+    margin-right: 10%;
+    margin-top: 5px;
+    min-width: 560px;
+    min-height: 315px;
+}
+
+
+#banner {
+    background-color: rgba(132, 0, 255, 0.377);
+    grid-area: banner;
+    max-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 3%;
+    font-family: 'Roboto Condensed', sans-serif;   
+}
+
+#logo { 
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 800px; 
+    background-image: url("img/logoblanco.png");
+    background-position: center;
+}
+
+#container {  margin-left: 25%;}
+span a {text-decoration: none; color:white;}
+
+@media screen and (max-width: 760px) {
+    #contenedor-ppal {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "header"
+        "main1"
+        "img1"
+        "main2"
+        "mapa1"
+        "main3"
+        "video1"
+        "main4"
+        "img2"
+        "banner";
+}}
+  
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+    #contenedor-ppal{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
+      grid-template-areas: 
+      "header header header header header"
+      "titulo titulo titulo titulo titulo"
+      "main1 main1  img1 img1 img1 "
+      "main2 main2  mapa1 mapa1 mapa1 "
+      "main3 main3 video1 video1 video1"
+      "main4 main4 img2 img2 img2"
+      "banner banner banner banner banner";
+}}
