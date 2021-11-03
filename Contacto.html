@@ -40,33 +40,28 @@
         
         <br>
      
-        <form>
-
-            <div class="formulario">
-              <label for="seleccionar">Seleccionar</label>
-              <select class="formulario" id="seleccion">
-                <option>Suscripcion</option>
-                <option>Consulta</option>
-              </select>
-            </div>
-
-            <br>
-
-            <div class="formulario">
-                <label for="mail">Mail</label>
-                <input type="email" class="formulario" id="seleccion" placeholder="nombre@email.com">
-            </div>
-
-            <br>
-
-            <div class="formulario">
-              <label for="texto">Escribir Consulta</label>
-              <textarea class="formulario" id="seleccion" rows="5" cols="50"></textarea>
-            </div>
-            <br>
-            <div class="boton" <button type="sumbit"> <i class="far fa-share-square"></i> Enviar <button/> </div>
-        
-        </form>
+            <form method="get" name="formulario" autocomplete="off">
+        <div class="formulario">
+            <label for="seleccionar">Seleccionar</label>
+            <select name="opcion" class="formulario" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Suscripcion">Suscripcion</option>
+            <option value="Consulta">Consulta</option>
+            </select>
+        </div>
+        <br>
+        <div class="formulario">
+            <label for="mail">Mail</label>
+            <input type="email" name="email" class="formulario" placeholder="nombre@email.com" required>
+        </div>
+        <br>
+        <div class="formulario">
+            <label for="texto">Escribir Consulta</label>
+            <textarea name="consulta" class="formulario" rows="5" cols="50" required></textarea>
+        </div>
+        <br>
+        <button class="boton"type="sumbit"> <i class=" far fa-share-square"></i> Enviar </button>
+    </form>
               
     </div>
 
