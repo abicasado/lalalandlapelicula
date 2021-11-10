@@ -56,12 +56,13 @@ body {
     opacity: 1;
     width: 1000px;
     text-align: center;
+    margin-left: 40%
 }
 
 .texto { font-family: 'Roboto Condensed', sans-serif ; color: white;}
 
 .formulario {color: black; 
-        font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;
+        font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;    margin-left: 40%;
 }
 
 .boton {color: white; margin-left: 45% ; margin-right: 15%;
