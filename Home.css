@@ -27,8 +27,8 @@ body {
     grid-template-areas:
       "header header header header"
       "main main main main"
-      "main main main main"
-      "hero hero . ."
+      "hero hero hero hero"
+      "hero hero hero hero"
       "banner banner banner banner";
 }
 
