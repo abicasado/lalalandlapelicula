@@ -58,7 +58,7 @@ body {
     min-height: 620px;
 }
 
-.texto { font-family: 'Roboto Condensed', sans-serif ; margin-left: 45%; margin-right: 15%; margin-top: 0%; margin-bottom: 1%; color: white;}
+.texto { font-family: 'Roboto Condensed', sans-serif ; margin-left: 45%; margin-right: 15%; margin-top: 0%; margin-bottom: 1%; color: black;}
 
 .formulario {color: white; margin-left: 45% ; margin-right: 15%;
         font-family: 'Roboto Condensed', sans-serif;     
