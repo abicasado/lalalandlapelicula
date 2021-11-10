@@ -143,14 +143,14 @@ span a {text-decoration: none; color:white;}
             "header header header header header"
             "main main main main"
             "main main main main"
-            ". hero hero hero hero . "
-            ". hero hero hero hero . "
+            ". hero hero hero hero hero "
+            ". hero hero hero hero hero "
             "banner banner banner banner banner"
             ;
 }
     #logo {width: 100% ; align-items: center}
     #header {max-width: 100%; width: 500px; text-align: center; margin:0%};
-    #hero {max-height: 100%;}  
+    #hero {max-height: 100%; margin: 0.2%}  
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
