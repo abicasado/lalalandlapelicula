@@ -25,9 +25,10 @@ body {
 #Contenedor-principal {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.3fr 1.5fr 0.3fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
     grid-template-areas:
       "header header header header"
+      "main main main main"
       "main main main main"
       "banner banner banner banner";
 }
