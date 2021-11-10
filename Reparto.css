@@ -177,8 +177,16 @@ span a {text-decoration: none; color:white;}
         "main2"
         "img2"
         "hero"
-        "banner";
-}}
+        "banner"; }
+       
+        #header {max-width: 100%; width: 100%}
+        #main1 {max-width: 100%;width: 100%}
+        #img1 {max-width: 100%;width: 100%}
+        #main2 {max-width: 100%;width: 100%}
+        #img2 {max-width: 100%;width: 100%}
+        #hero {max-width: 100%;width: 100%}
+        #banner {max-width: 100%;width: 100%}
+}
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
     #contenedor-ppal{
