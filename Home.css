@@ -147,7 +147,9 @@ span a {text-decoration: none; color:white;}
             "hero  ."
             "banner banner "
             ;
-}}
+}
+#header {width: 100%};
+}
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
     #contenedor-ppal{
