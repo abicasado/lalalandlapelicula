@@ -169,7 +169,7 @@ span a {text-decoration: none; color:white;}
 @media screen and (max-width: 760px) {
     #contenedor-ppal {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 100%;
       grid-template-areas:
         "header"
         "main1"
@@ -186,6 +186,8 @@ span a {text-decoration: none; color:white;}
         #img2 {max-width: 100% ;width: 100% ; height: fit-content}
         #hero {max-width: 100% ;width: 100% ; height: fit-content}
         #banner {max-width: 100% ;width: 100% ; height: fit-content}
+        #logo {max-width: 100% ;width: 100% ; height: fit-content}
+
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
