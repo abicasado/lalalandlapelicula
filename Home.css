@@ -149,7 +149,7 @@ span a {text-decoration: none; color:white;}
             ;
 }
     #logo {width: 100% ; align-items: center}
-    #header {width: 100%};
+    #header {max-width: 100%; width: 500px; text-align: center};
     #hero {max-height: 100%;}  
 }
   
