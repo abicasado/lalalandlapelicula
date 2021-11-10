@@ -141,13 +141,14 @@ span a {text-decoration: none; color:white;}
             grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
             grid-template-areas: 
             "header header header header header"
-            "main main main main main"
-            "main main main main main"
-            "hero  hero hero . ."
-            "hero  hero hero . ."
-            "banner banner banner banner banner"
+            "main main"
+            "main main"
+            "hero ."
+            "hero ."
+            "banner banner"
             ;
 }
+    #logo {width: 100%}
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
