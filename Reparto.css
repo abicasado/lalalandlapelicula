@@ -179,14 +179,14 @@ span a {text-decoration: none; color:white;}
         "hero"
         "banner"; }
        
-        #header {max-width: 100% ; width: 100% ; height: fit-content}
-        #main1 {max-width: 100% ;width: 100% ; height: fit-content}
-        #img1 {max-width: 100% ;width: 100% ; height: fit-content}
-        #main2 {max-width: 100% ;width: 100% ; height: fit-content}
-        #img2 {max-width: 100% ;width: 100% ; height: fit-content}
-        #hero {max-width: 100% ;width: 100% ; height: fit-content}
-        #banner {max-width: 100% ;width: 100% ; height: fit-content}
-        #logo {max-width: 100% ;width: 100% ; height: fit-content}
+        #header {max-width: 100% ; width: 100% ; height: fit-content; margin: 0%}
+        #main1 {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
+        #img1 {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%} 
+        #main2 {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
+        #img2 {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
+        #hero {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
+        #banner {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
+        #logo {max-width: 100% ;width: 100% ; height: fit-content ; margin: 0%}
 
 }
   
