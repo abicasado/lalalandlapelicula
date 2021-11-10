@@ -53,14 +53,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
-    width:50%;
-    min-width: 400px;
+    width:60%;
+    min-width: 500px;
 }
 
 .texto { font-family: 'Roboto Condensed', sans-serif ; margin-left: 45%; margin-right: 15%; margin-top: 0%; margin-bottom: 1%; color: white;}
 
 .formulario {color: black; 
-        font-family: 'Roboto Condensed', sans-serif; width:50%    
+        font-family: 'Roboto Condensed', sans-serif; min-width: 200px;
 }
 
 .boton {color: white; margin-left: 45% ; margin-right: 15%;
