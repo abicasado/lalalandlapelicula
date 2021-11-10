@@ -1,86 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - La La Land</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="Contacto.css">
-    <link rel="icon" href="img/estrella.ico" width="13">
-    <script src="https://kit.fontawesome.com/df3d267a2c.js" crossorigin="anonymous"></script>
-</head>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Contacto - La La Land</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+       <link rel="stylesheet" href="Contacto.css">
+       <link rel="icon" href="img/estrella.ico" width="13">
+       <script src="https://kit.fontawesome.com/df3d267a2c.js" crossorigin="anonymous"></script>
+   </head>
+   
+   <body>
+   
+   <div id="Contenedor-principal">
+   
+       <div class="Contacto" id="header">
+       <header>
+           <nav>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="index.html">Inicio</a> </span>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Home.html">Sinopsis</a> </span>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Reparto.html">Reparto</a> </span>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="About.html" "> Sobre la pelicula</a> </span>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Contacto.html" "> Contacto </a> </span>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+           </nav>
+       </header>
+       </div>
+   
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
 
-<body>
-
-<div id="Contenedor-principal">
-
-    <div class="Contacto" id="header">
-    <header>
-        <nav>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="index.html">Inicio</a> </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Home.html">Sinopsis</a> </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Reparto.html">Reparto</a> </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="About.html" "> Sobre la pelicula</a> </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Contacto.html" "> Contacto </a> </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-        </nav>
-    </header>
-    </div>
-
-    <div class="Contacto" id="main">
-        <br> <br> <br>
-        <div class ="texto" >
-        <p class= "shadow-lg text-center"> 
-            Te alentamos a mantenerse en contacto con nosotros! Si tenes alguna duda sobre la pelicula o alguna sugerencia para la pagina porfavor completa tus datos y en la casilla opcion selecciona "Consulta". 
-            Por el contrario, si queres suscribirte a nuestro newsletter para obtener las ultimas novedades, selecciona la opcion "Suscripcion" en la parte de "Seleccionar".
-        </p>
-        </div>
-        
-        <br>
-     
-            <form method="get" name="formulario" autocomplete="off">
-        <div class="formulario">
-            <label for="seleccionar">Seleccionar</label>
-            <select name="opcion" class="formulario" required>
-            <option value="">Seleccione una opción</option>
-            <option value="Suscripcion">Suscripcion</option>
-            <option value="Consulta">Consulta</option>
-            </select>
-        </div>
-        <br>
-        <div class="formulario">
-            <label for="mail">Mail</label>
-            <input type="email" name="email" class="formulario" placeholder="nombre@email.com" required>
-        </div>
-        <br>
-        <div class="formulario">
-            <label for="texto">Escribir Consulta</label>
-            <textarea name="consulta" class="formulario" rows="5" cols="50" required></textarea>
-        </div>
-        <br>
-        <button class="boton"type="sumbit"> <i class=" far fa-share-square"></i> Enviar </button>
-    </form>
-              
-    </div>
-
-    <div class="item" id="banner">
-        <div id="piepagina"></div>
-        <div id="ig"></div>
-        <div id="fb"></div>
-        <div id="tw"></div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><img src="img/logoblanco.png" alt="logo" width="300px"/></a> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/lalaland/"><img src="img/ig.png" alt="instagram" width="40px"/></a> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/lalaland"><img src="img/tw.png" alt="twitter" width="40px"/></a> 
-        <br> <br> Pagina diseñada por Abril Casado para programa Codo a Codo 4.0
-
-    </div>
-
+     <div class="Contacto" id="main">
+           <br> <br> <br>
+           <div class ="texto" >
+           <p class= "shadow-lg text-center"> 
+               Te alentamos a mantenerse en contacto con nosotros! Si tenes alguna duda sobre la pelicula o alguna sugerencia para la pagina porfavor completa tus datos y en la casilla opcion selecciona "Consulta". 
+               Por el contrario, si queres suscribirte a nuestro newsletter para obtener las ultimas novedades, selecciona la opcion "Suscripcion" en la parte de "Seleccionar".
+           </p>
+           </div>
+</div>
+<div class="col-sm-6">
+<form>
+   <div class="formulario">
+                 <label for="seleccionar">Seleccionar</label>
+                 <select class="formulario" id="seleccion">
+                   <option>Suscripcion</option>
+                   <option>Consulta</option>
+                 </select>
+               </div>
+   
+               <br>
+   
+               <div class="formulario">
+                   <label for="mail">Mail</label>
+                   <input type="email" class="formulario" id="seleccion" placeholder="nombre@email.com">
+               </div>
+   
+               <br>
+   
+               <div class="formulario">
+                 <label for="texto">Escribir Consulta</label>
+                 <textarea class="formulario" id="seleccion" rows="5" cols="50"></textarea>
+               </div>
+               <br>
+               <div class="boton" <button type="sumbit"> <i class="far fa-share-square"></i> Enviar <button/> </div>
+           
+           </form>
+                 
+       </div>
+</div>
+</div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<script src="validacion.js"></script> 
-
-</body>
-</html>
+   
+       <div class="item" id="banner">
+           <div id="piepagina"></div>
+           <div id="ig"></div>
+           <div id="fb"></div>
+           <div id="tw"></div>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><img src="img/logoblanco.png" alt="logo" width="300px"/></a> 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/lalaland/"><img src="img/ig.png" alt="instagram" width="40px"/></a> 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/lalaland"><img src="img/tw.png" alt="twitter" width="40px"/></a> 
+           <br> <br> Pagina diseñada por Abril Casado para programa Codo a Codo 4.0
+   
+       </div>
+   
+   </div>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+   <script src="validacion.js"></script> 
+   
+   </body>
+   </html>
+   
+   
