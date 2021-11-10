@@ -149,8 +149,8 @@ span a {text-decoration: none; color:white;}
             ;
 }
     #logo {width: 100% ; align-items: center}
-    #header {max-width: 100%; width: 500px; text-align: center; margin:0%; font-size: x-small;};
-    #hero {max-height: 100%; margin: 0px}  
+    #header {max-width: 100%; width: 500px; text-align: center; margin-left:0%; font-size: x-small;};
+    #hero {max-height: 100%; margin: 0px; margin-right: 0%}  
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
