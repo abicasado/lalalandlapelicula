@@ -62,7 +62,7 @@ body {
 .texto { font-family: 'Roboto Condensed', sans-serif ; color: white;}
 
 .formulario {color: black; 
-        font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;    margin-left: 40%;
+        font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;    margin-left: 40%;    background-color: rgba(68, 0, 255, 0.377);
 }
 
 .boton {color: white; margin-left: 45% ; margin-right: 15%;
