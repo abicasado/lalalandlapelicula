@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
-    position: relative;
+    position: center;
 }
 
 #Contenedor-principal {
@@ -58,10 +58,10 @@ body {
     text-align: center;
 }
 
-.texto { font-family: 'Roboto Condensed', sans-serif ; margin-left: 45%; margin-right: 15%; margin-top: 0%; margin-bottom: 1%; color: white;}
+.texto { font-family: 'Roboto Condensed', sans-serif ; color: white;}
 
 .formulario {color: black; 
-        font-family: 'Roboto Condensed', sans-serif; min-width: 500px; text-align: center; margin 4%; width: 800px;
+        font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;
 }
 
 .boton {color: white; margin-left: 45% ; margin-right: 15%;
