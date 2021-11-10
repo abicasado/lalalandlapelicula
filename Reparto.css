@@ -179,13 +179,13 @@ span a {text-decoration: none; color:white;}
         "hero"
         "banner"; }
        
-        #header {max-width: 100%; width: 100%}
-        #main1 {max-width: 100%;width: 100%}
-        #img1 {max-width: 100%;width: 100%}
-        #main2 {max-width: 100%;width: 100%}
-        #img2 {max-width: 100%;width: 100%}
-        #hero {max-width: 100%;width: 100%}
-        #banner {max-width: 100%;width: 100%}
+        #header {max-width: 100% ; width: 100% ; height: fit-content}
+        #main1 {max-width: 100% ;width: 100% ; height: fit-content}
+        #img1 {max-width: 100% ;width: 100% ; height: fit-content}
+        #main2 {max-width: 100% ;width: 100% ; height: fit-content}
+        #img2 {max-width: 100% ;width: 100% ; height: fit-content}
+        #hero {max-width: 100% ;width: 100% ; height: fit-content}
+        #banner {max-width: 100% ;width: 100% ; height: fit-content}
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
