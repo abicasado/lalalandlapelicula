@@ -20,6 +20,13 @@ span:hover { background-color: rgba(68, 0, 255, 0.733); color: white;}
 body {
     margin: 0px; 
     scroll-behavior: smooth;
+    background-image: url("img/fondofinal.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    position: center
 }
 
 #Contenedor-principal {
