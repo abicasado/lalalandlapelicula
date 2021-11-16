@@ -108,13 +108,13 @@ span a {text-decoration: none; color:white;}
 
 @media screen and (max-width: 760px) {
     #contenedor-ppal {
-            grid-template-columns: repeat(5, 0.2fr);
+            grid-template-columns: repeat(2, 0.5fr);
             grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
             grid-template-areas: 
-            "header header header header header"
-            "main main main main"
-            "main main main main"
-            "banner banner banner banner banner"
+            "header header"
+            "main main "
+            "main main"
+            "banner banner"
             ;
 }
     #logo {width: 100% ; align-items: center}
