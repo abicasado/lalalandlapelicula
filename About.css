@@ -179,26 +179,41 @@ span:hover { background-color: rgba(68, 0, 255, 0.733); }
     background-position: center;
 }
 
-#container {  margin-left: 25%;}
+#container { margin-left: 25%;}
 span a {text-decoration: none; color:white;}
 
 @media screen and (max-width: 760px) {
-    #contenedor-ppal {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat (11,1fr);
-      grid-template-areas:
-        "header"
-        "titulo"
-        "main1"
-        "img1"
-        "main2"
-        "mapa1"
-        "main3"
-        "video1"
-        "main4"
-        "img2"
-        "banner";
-}}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "titulo"
+          "main1"
+          "img1"
+          "main2"
+          "mapa1"
+          "main3"
+          "video1"
+          "main4"
+          "img2"
+          "banner";}
+      
+      .header { grid-area: header; }
+      .img1 { grid-area: img1; }     
+      .main2 { grid-area: main2; } 
+      .titulo { grid-area: titulo; }  
+      .main1 { grid-area: main1; } 
+      .mapa1 { grid-area: mapa1; }  
+      .main3 { grid-area: main3; }  
+      .video1 { grid-area: video1; }   
+      .main4 { grid-area: main4; }   
+      .img2 { grid-area: img2; }    
+      .banner { grid-area: banner; }  
+}
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
     #contenedor-ppal{
