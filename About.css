@@ -17,6 +17,7 @@ body {
     opacity: 1;
     position: relative;
     min-height: 640px;
+    max-width: auto;
 }
 
 span:hover { background-color: rgba(68, 0, 255, 0.733); }
