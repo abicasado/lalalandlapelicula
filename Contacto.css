@@ -68,7 +68,7 @@ body {
 
 .texto { font-family: 'Roboto Condensed', sans-serif ; color: white;}
 
-.un_formulario {color: white; 
+#un_formulario {color: white; 
         font-family: 'Roboto Condensed', sans-serif; text-align: center; width: 800px;    margin-left: 20%; color: yellow;
 }
 
