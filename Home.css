@@ -136,21 +136,22 @@ span:hover { background-color: rgba(68, 0, 255, 0.733);}
 span a {text-decoration: none; color:white;} 
 
 @media screen and (max-width: 760px) {
-    #contenedor-ppal {
-            grid-template-columns: repeat(5, 0.2fr);
-            grid-template-rows: 4em repeat(2,3fr) repeat(2,2fr);
-            grid-template-areas: 
-            "header header header header header"
-            "main main main main"
-            "main main main main"
-            ". hero hero hero hero hero "
-            ". hero hero hero hero hero "
-            "banner banner banner banner banner"
-            ;
-}
-    #logo {width: 100% ; align-items: center}
-    #header {max-width: 100%; width: 500px; text-align: center; margin-left:0%; font-size: x-small;};
-    #hero {max-height: 100%; margin: 0px; margin-right: 0%}  
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "main"
+          "hero"
+          "banner";}
+      
+      .header { grid-area: header; }
+      .main { grid-area: main; }     
+      .hero { grid-area: hero; }    
+      .banner { grid-area: banner; }  
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
