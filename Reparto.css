@@ -166,26 +166,32 @@ span:hover { background-color: rgba(68, 0, 255, 0.733);}
 #container {  margin-left: 25%;}
 span a {text-decoration: none; color:white;}
 
-@media screen and (max-width: 760px) {
-    #contenedor-ppal {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7,1fr);
+  @media screen and (max-width: 760px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
         grid-template-areas:
-        "header"
-        "main1"
-        "img1"
-        "img2"
-        "main2"
-        "hero"
-        "banner";}
-    
-    #header {max-width: 100%; width: 100%; margin: 0%; font-size: medium;};
-    #main1   {max-width: 100%; width: 100%; margin: 0%;};
-    #img1   {max-width: 100%; width: 100%; margin: 0%;};
-    #main2   {max-width: 100%; width: 100%; margin: 0%;};
-    #img2   {max-width: 100%; width: 100%; margin: 0%;};
-    #hero   {max-width: 100%; width: 100%; margin: 0%;};
-    #banner   {max-width: 100%; width: 100%; margin: 0%;};
+          "header"
+          "main1"
+          "img1"
+          "img2"
+          "main2"
+          "elenco"
+          "hero"
+          "banner";}
+      
+      .header { grid-area: header; }
+      .main1 { grid-area: main1; }     
+      .img1 { grid-area: img1; } 
+      .img2 { grid-area: img2; }  
+      .main2 { grid-area: main2; } 
+      .elenco { grid-area: elenco; }  
+      .hero { grid-area: hero; }    
+      .banner { grid-area: banner; }  
+}
 
 }
   
