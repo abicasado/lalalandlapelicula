@@ -18,7 +18,7 @@
     <div class="Contacto" id="header">
     <header>
         <nav>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Home.html">Inicio</a> </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="index.html">Inicio</a> </span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Home.html">Sinopsis</a> </span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="Reparto.html">Reparto</a> </span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="About.html" "> Sobre la pelicula</a> </span>
@@ -40,35 +40,32 @@
         
         <br>
      
-        <form>
-
-            <div class="formulario" id="seleccion">
-              <label for="seleccionar">Seleccionar</label>
-              <select class="formulario" id="seleccion">
-                <option>Suscripcion</option>
-                <option>Consulta</option>
-              </select>
-            </div>
-
-            <br>
-
-            <div class="formulario" id="Mail">
-                <label for="mail">Mail</label>
-                <input type="email" class="formulario" placeholder="nombre@email.com">
-            </div>
-
-            <br>
-
-            <div class="formulario" id="Consulta">
-              <label for="texto">Escribir Consulta</label>
-              <textarea class="formulario" rows="5" cols="50"></textarea>
-            </div>
-            <br>
-            <div class="boton" <button type="sumbit"> <i class="far fa-share-square"></i> Enviar <button/> </div>
-        
-        </form>
+        <form action="" method="" id="un_formulario">
+            <div class="grid">
+            
+            <label for="seleccionar">Seleccionar</label>
+            <select class="formulario" id="seleccion">
+            <option>Suscripcion</option>
+            <option>Consulta</option>
+            </select>
               
-    </div>
+            <label for="nombre" class="titulo">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="campo" maxlength="15" pattern="[A-Za-z]{2,15}" title="Introduzca entre 2 y 12 letras" placeholder="Introduzca entre 2 y 12 letras" required>
+              
+              <label for="tel" class="titulo">Teléfono:</label>
+              <input type="tel" name="tel" id="tel" class="campo" pattern="[0-9]{8}" title="Introduzca 8 cifras" placeholder="Introduzca 8 cifras" required>
+              
+              <label for="texto" class="titulo">Consulta</label>
+              <input type="text" name="texto" id="texto" class="campo" maxlength="200" pattern="[A-Za-z]{2,15}" title="Introduzca su Consulta" placeholder="Introduzca su Consulta" required>
+
+              <span></span>
+              <span>
+              <p id="mensaje_error"></p>
+                <input type="submit" name="send" id="send" value="Enviar">
+                <input type="reset" name="clear" id="clear" value="Borrar">
+              </span>
+            </div>
+          </form>
 
     <div class="item" id="banner">
         <div id="piepagina"></div>
@@ -89,3 +86,5 @@
 
 </body>
 </html>
+
+
