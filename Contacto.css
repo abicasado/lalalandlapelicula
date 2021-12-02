@@ -103,6 +103,14 @@ body {
     background-position: center;
 }
 
+.error {
+    border: 2px red solid;}  
+  #mensaje_error{
+    padding: 10px;
+    border: 2px red solid;
+  }
+  
+
 
 span a {text-decoration: none; color:white;}
 
